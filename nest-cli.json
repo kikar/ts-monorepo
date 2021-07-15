@@ -1,0 +1,48 @@
+{
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/yum-test/src",
+  "monorepo": true,
+  "root": "apps/yum-test",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/yum-test/tsconfig.app.json"
+  },
+  "projects": {
+    "yum-test": {
+      "type": "application",
+      "root": "apps/yum-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/yum-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/yum-test/tsconfig.app.json"
+      }
+    },
+    "api": {
+      "type": "application",
+      "root": "apps/api",
+      "entryFile": "main",
+      "sourceRoot": "apps/api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/api/tsconfig.app.json"
+      }
+    },
+    "jwt": {
+      "type": "library",
+      "root": "libs/jwt",
+      "entryFile": "index",
+      "sourceRoot": "libs/jwt/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/jwt/tsconfig.lib.json"
+      }
+    },
+    "aws": {
+      "type": "library",
+      "root": "libs/aws",
+      "entryFile": "index",
+      "sourceRoot": "libs/aws/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/aws/tsconfig.lib.json"
+      }
+    }
+  }
+}
