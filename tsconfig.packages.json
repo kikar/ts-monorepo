@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+  {
+    "path": "./apps/api/tsconfig.app.json"
+  },
+  {
+    "path": "./apps/yum-test/tsconfig.app.json"
+  },
+  {
+    "path": "./libs/aws"
+  },
+  {
+    "path": "./libs/jwt"
+  }
+ ]
+}

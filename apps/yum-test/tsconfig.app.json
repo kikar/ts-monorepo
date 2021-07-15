@@ -1,16 +1,10 @@
 {
-  "extends": "../../tsconfig.json",
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "declaration": false,
+    "rootDir": ".",
     "outDir": "../../dist/apps/yum-test"
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "test",
-    "**/*spec.ts"
+  "references": [
+    { "path": "../../libs/jwt" }
   ]
 }

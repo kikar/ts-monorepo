@@ -1,3 +1,4 @@
+
 {
   "compilerOptions": {
     "composite": true,
@@ -14,17 +15,11 @@
     "incremental": true,
     "skipLibCheck": true,
     "paths": {
-      "@app/jwt": [
-        "libs/jwt/src"
-      ],
-      "@app/jwt/*": [
-        "libs/jwt/src/*"
-      ],
       "@app/aws": [
-        "libs/aws/src"
+        "./libs/aws/src"
       ],
-      "@app/aws/*": [
-        "libs/aws/src/*"
+      "@app/jwt": [
+        "./libs/jwt/src"
       ]
     }
   }
