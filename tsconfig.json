@@ -9,23 +9,21 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2017",
     "sourceMap": true,
-    "outDir": "./dist",
+    "rootDir": "./",
     "baseUrl": "./",
     "incremental": true,
-    "skipLibCheck": true,
-    "paths": {
-      "@app/jwt": [
-        "libs/jwt/src"
-      ],
-      "@app/jwt/*": [
-        "libs/jwt/src/*"
-      ],
-      "@app/aws": [
-        "libs/aws/src"
-      ],
-      "@app/aws/*": [
-        "libs/aws/src/*"
-      ]
-    }
-  }
+    "skipLibCheck": true
+  },
+  "include": [
+    "apps/**/*",
+    "libs/**/*"
+  ],
+  "references": [
+    {
+      "path": "./apps/api/tsconfig.app.json"
+    },
+    {
+      "path": "./apps/yum-test/tsconfig.app.json"
+    },
+  ],
 }
